@@ -1,3 +1,5 @@
-FROM alpine:latest
-LABEL auteur="Sofiane ESIEE" email="Sofiane123@mail.com"
-ENTRYPOINT ["echo", "Mon premier Dockerfile"]
+
+FROM php:8-apache
+LABEL maintainer="Sofiane123@mail.com"
+
+COPY src/ /var/www/html/
